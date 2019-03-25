@@ -1,0 +1,9 @@
+language: csharp
+solution: VivaldiSoft.Extensions.sln
+mono: latest
+dotnet: 2.0.0
+script:
+  - dotnet restore
+  - dotnet build ./src/VivaldiSoft.Extensions/
+  - dotnet build ./tests/VivaldiSoft.Extensions.Tests/
+  - dotnet test ./tests/VivaldiSoft.Extensions.Tests/
